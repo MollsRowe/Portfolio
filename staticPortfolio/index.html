@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly Rowe Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <img src="./imgs/IMG_0201.jpeg" id="pic" class="rounded-circle img-fluid">
+        <a class="navbar-brand ml-2 text-white" href="#" onclick="landing(event)">Molly Rowe</a>
+        <!-- Links -->
+        <ul class="navbar-nav offset-7">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#" id="about" onclick="about(event)">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#" id="work" onclick="work(event)">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#" id="contact" onclick="contact(event)">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- LANDING PG -->
+    <div class='mx-auto d-block bg' id="landingPg">
+        <h1 class='display-2 text-center mt-4 text-white'>Molly Rowe</h1>
+        <h3 class='text-center text-white'>Software Engineer</h3>
+        <h5 class='text-center text-white mb-3'>"What you focus on...is what comes to pass" -unknown</h5>
+    </div>
+
+    <!-- ABOUT DIV -->
+    <div id="aboutPg" class="text-center bg text-white mx-auto d-block hidden">
+        <h1 class="mt-5">About</h1>
+        <p class="mb-3">As an experienced professional, I specialize in creating and building teams with an emphasis on
+            growing individuals. Highly flexible with a capacity to fill team-oriented roles including leaders. I have
+            found my passion in technology. I have completed a 16-month course on MERN Development and am excited to use
+            my skills and continue to learn. Check out my <a href="#work">most recent work</a>.</p>
+        <p>I am proficient in<br /> <i class="">HTML5</i><i class='ml-4'>CSS3</i> <i class="ml-4">Bootstrap</i><i
+                class='ml-4'>JS</i><i class='ml-4'>NodeJS</i><i class='ml-4'>Express</i><i class='ml-4'>React</i><i
+                class='ml-4'>MongoDB</i><i class='ml-4'>mySQL</i></p>
+    </div>
+
+    <!-- WORK DIV -->
+    <div class=" bg text-white mb-3 hidden mx-auto d-block" id="workPg">
+        <h1 class="mt-5 mb-3 text-center">Work</h1>
+
+        <a href="./2:24:21Resume.pdf" className="fas fa-file-pdf  mb-3 ml-1 mr-1" id="resume"> Download Resume</a><br />
+
+        <img src='./imgs/dancingOnRoof.jpeg' alt="Dancing on the Roof Pic" class="img-thumbnail">
+        <p class="text-center text-white mt-2">Developed with HTML5, CSS3, Bootstrap, jQuery, and Javascript</p>
+        <br />
+        <br />
+        <img src='./imgs/nailedIt.jpeg' alt="Nailed-It Salon" class="img-thumbnail">
+        <p class="text-center text-white mt-2">Developed with HTML5, CSS3, Bootstrap, jQuery, Javascript, mySQL, Node, and Express</p>
+
+        <br />
+        <br />
+        <img src="./imgs/dolledUp.jpeg" alt="Dolled-Up" class="img-thumbnail">
+        <p class="text-center text-white mt-2">Developed with HTML5, CSS3, Bootstrap, jQuery, Javascript, mongoDB, Node, and Express</p>
+
+        <br />
+        <br />
+        <img src="./imgs/donutsAmor.jpeg" alt="Donuts Amor" class="img-thumbnail">
+        <p class="text-center text-white mt-2">Developed with React, React-bootstap, JavaScript, Node, Express, mongoDB</p>
+        <p class="text-center text-white mt-1">** Currently used in The Last Mile classrooms as an exemplary project **</p>
+
+        <br />
+        <br />
+        <img src="./imgs/walmartThanks.jpeg" alt="Walmart Thanks" class="img-thumbnail">
+        <p class="text-center text-white mt-2">Developed static website</p>
+
+    </div>
+
+    <!-- CONTACT DIV -->
+    <div class="bg text-white mx-auto d-block hidden" id="contactPg">
+        <h1 class="mt-5 mb-3 text-center">Contact</h1>
+        <p class="text-center text-white">cell: (574) 732-7725</p>
+        <p class="text-center text-white">email: mrowe1109@icloud.com</p>
+        <p class="text-center text-white">address: South Bend, IN</p>
+
+
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
